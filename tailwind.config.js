@@ -5,7 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      montserrat: ['Montserrat', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
+      prism: ['Tilt Prism', 'cursive'],
+      inter: ['Inter', 'sans-serif'],
+    },
   },
+
   plugins: [],
 }
 
