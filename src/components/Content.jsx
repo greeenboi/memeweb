@@ -30,7 +30,7 @@ const Content = () => {
 
   return (
     <>
-      <section className='hidden md:memebanner'>
+      <section className='hidden md:block memebanner'>
         <Box  className='border p-12 rounded-3xl border-emerald-400 w-fit ml-0 mr-0'>
           <h1 className="text-8xl font-prism font-medium text-teal-200 ">
             <p  className="upgrade">

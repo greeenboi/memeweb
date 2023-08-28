@@ -8,7 +8,7 @@ import { PiNumberOneBold, PiNumberTwoBold, PiNumberThreeBold } from 'react-icons
 const Home = () => {
   return (
    <>
-    <main className="hidden md:homebanner">
+    <main className="hidden md:block homebanner">
       <section className='flex flex-row gap-4 mt-2 mb-2'>
         <Box  className='border p-24 rounded-3xl border-emerald-400 glass'>
           <h1 className="text-8xl font-prism font-medium text-teal-200  ">
