@@ -4,6 +4,10 @@ import { Image } from '@chakra-ui/react'
 import { useColorMode } from '@chakra-ui/react'
 import { BsFillSunFill, BsFillMoonStarsFill } from 'react-icons/bs'
 import { useDisclosure } from '@chakra-ui/react'
+import { storage } from '../utils/firebase'
+import { ref, getDownloadURL, uploadBytes } from "firebase/storage"
+import { useState } from 'react';
+import { uploadBytesResumable } from 'firebase/storage';
 import {
   Drawer,
   DrawerBody,
@@ -18,6 +22,33 @@ const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode()
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef()
+  const [progressPercent, setProgressPercent] = useState(0)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const file = e.target[0]?.files[0]
+  
+    if (!file) return null;
+    const storageRef = ref(storage, `memes/${file.name}`)
+    const uploadTask = uploadBytesResumable(storageRef, file)
+  
+    uploadTask.on("state_changed",
+      (snapshot) => {
+        const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100)
+        setProgressPercent(progress)
+      },
+      (error) => {
+        alert(error)
+      },
+      () => {
+        e.target[0].value = ''
+        getDownloadURL(storageRef).then((downloadURL) => {
+          console.log(downloadURL)
+        })
+      }
+    )
+  } 
+
   return (
     <nav className=' hidden md:flex md:flex-row gap-2 font-mono w-full h-full  justify-evenly items-center pt-2 mb-1 '> 
      
@@ -45,20 +76,21 @@ const Navbar = () => {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent className='noover'>
           <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
+          <DrawerHeader>Upload Your Meme</DrawerHeader>
+          <form className='noover' name='upload_file' onSubmit={handleSubmit}>
 
-          <DrawerBody>
-            <input placeholder='Type here...' />
+          <DrawerBody className='noover'>
+            <input type='file' />
+            <progress value={progressPercent} max="100"/>
           </DrawerBody>
 
-          <DrawerFooter>
-            <button variant='outline' mr={3} onClick={onClose}>
-              Cancel
-            </button>
-            <button colorScheme='blue'>Save</button>
+          <DrawerFooter className='noover'>
+            
+            <button colorScheme='blue'>Upload</button>
           </DrawerFooter>
+          </form>
         </DrawerContent>
       </Drawer>
       
