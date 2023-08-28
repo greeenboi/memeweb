@@ -21,10 +21,12 @@ Introducing Radical - your ultimate destination for laughter and creativity! ðŸŽ
 <details id=2 open>
 <summary><h2>Tech Stack Used</h2></summary>
 <ul><b>
-<li> FrameWork: React [React-app] <img url="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" alt="react"> </li>
+<li> FrameWork: React [React-app] <img height="24px" src="https://github.com/greeenboi/memeweb/assets/118198968/21f385c8-74a1-479d-a02c-b87725506f4c" alt="react"> </li>
+
+
 <li>Ui/Ux Library: Chakra UI </li>
 <li>Backend-Connectivity: Rest-API</li>
-<li>Database: Firebase <img url="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain.svg" alt="firebase"></li>
+<li>Database: Firebase <img height="24px" src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain.svg" alt="firebase"></li>
 </b>
 </ul>
 </details>
