@@ -44,6 +44,7 @@ const Navbar = () => {
         e.target[0].value = ''
         getDownloadURL(storageRef).then((downloadURL) => {
           console.log(downloadURL)
+          window.location.reload(false);
         })
       }
     )
