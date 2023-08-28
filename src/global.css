@@ -13,3 +13,15 @@
 .glass{
   background-color: rgba(250,250,250,0.5);
 }
+.memebanner{
+    background:linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url('https://images.unsplash.com/photo-1681577997228-8c558352ffa7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100vw;
+    padding: 2rem 1.5rem;
+    justify-content: center;
+}
