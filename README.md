@@ -1,4 +1,4 @@
-![Bottom_down](https://github.com/greeenboi/memeweb/assets/118198968/2d0fab64-252f-449b-b249-eccdaa8ed82a)![Bottom_up](https://github.com/greeenboi/memeweb/assets/118198968/cd82d2e0-454a-462e-be76-e79e849b70af)
+![Bottom_up](https://github.com/greeenboi/memeweb/assets/118198968/cd82d2e0-454a-462e-be76-e79e849b70af)
         
 <p align="center">
 <img src="https://img.shields.io/badge/Release-Production_Final-lime">
@@ -113,4 +113,4 @@ Introducing Radical - your ultimate destination for laughter and creativity! ðŸŽ
 
 <br><br><a href="https://info.flagcounter.com/EBJh"><img src="https://s01.flagcounter.com/count2/EBJh/bg_FFC4EF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
 
-![Bottom_down](https://github.com/greeenboi/memeweb/assets/118198968/39f5d518-35f7-4779-bdac-bb1cff610ae1)
+<img src="https://github.com/greeenboi/memeweb/assets/118198968/39f5d518-35f7-4779-bdac-bb1cff610ae1"/>
