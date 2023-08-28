@@ -6,13 +6,18 @@ const About = () => {
     <>
       <main className='hidden md:block aboutbanner'>
         <section>
-          <Box  className='border p-12 rounded-3xl border-emerald-400 w-fit ml-0 mr-0'>
+          <Box  className='hidden md:block border p-12 rounded-3xl border-emerald-400 w-fit ml-0 mr-0'>
             <h1 className="text-8xl font-prism font-medium text-teal-200 ">
               <p  className="upgrade">
                 About us
               </p> 
             </h1>
           </Box>  
+          <h1 className="md:hidden text-6xl font-prism font-medium text-teal-200  ">
+            <p  className="upgrade">
+              About Us
+            </p> 
+          </h1>
         </section>
       </main>
       <main>

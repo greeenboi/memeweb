@@ -30,14 +30,19 @@ const Content = () => {
 
   return (
     <>
-      <section className='hidden md:block memebanner'>
-        <Box  className='border p-12 rounded-3xl border-emerald-400 w-fit ml-0 mr-0'>
-          <h1 className="text-8xl font-prism font-medium text-teal-200 ">
+      <section className='sm:hidden md:block memebanner'>
+          <Box  className='hidden md:flex border p-12 rounded-3xl border-emerald-400 w-fit ml-0 mr-0'>
+            <h1 className="text-8xl font-prism font-medium text-teal-200 ">
+              <p  className="upgrade">
+                Explore
+              </p> 
+            </h1>
+          </Box>
+          <h1 className="md:hidden text-6xl font-prism font-medium text-teal-200  ">
             <p  className="upgrade">
               Explore
             </p> 
           </h1>
-        </Box>
       </section>
       <main className='min-h-screen'>
         <div className='mt-12 mb-12 mr-2 ml-2 md:mr-24 md:ml-24 gap-4 lg:gap-12 grid grid-cols-1 md:grid-cols-5 '>
