@@ -8,7 +8,7 @@ import { PiNumberOneBold, PiNumberTwoBold, PiNumberThreeBold } from 'react-icons
 const Home = () => {
   return (
    <>
-    <main className="homebanner">
+    <main className="hidden md:homebanner">
       <section className='flex flex-row gap-4 mt-2 mb-2'>
         <Box  className='border p-24 rounded-3xl border-emerald-400 glass'>
           <h1 className="text-8xl font-prism font-medium text-teal-200  ">
@@ -22,10 +22,10 @@ const Home = () => {
       
     </main>
     <main className='flex flex-col justify-center items-center mt-12'>
-    <Box className='p-12 w-1/2 h-auto font-inter rounded-md flex items-center justify-center border border-emerald-400  '>
+    <Box className='p-12 w-full md:w-1/2 h-auto font-inter rounded-md flex items-center justify-center border border-emerald-400  '>
     Radical Meme Gallery - your ultimate destination for laughter and creativity! 
     </Box>
-    <Box  className='p-12 mr-2 ml-2 mt-12 h-auto font-inter rounded-md flex flex-row items-center justify-between '>
+    <Box  className='p-12 mr-2 ml-2 mt-12 h-auto font-inter rounded-md md:flex flex-row items-center justify-between hidden '>
       <Grid
         h='200px'
         templateRows='repeat(2, 1fr)'
