@@ -1,3 +1,8 @@
+<p align="center">
+<img src="https://img.shields.io/badge/Release-Production_Final-lime">
+<img src="https://img.shields.io/badge/Service-Vercel?style=social&logo=vercel
+"/>
+</p>
 <h1>Radical Meme Gallery</h1>
 
 <h2>Problem Statement</h2>
@@ -101,3 +106,7 @@ Introducing Radical - your ultimate destination for laughter and creativity! ðŸŽ
 
     This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 </details>
+
+***
+
+<br><br><a href="https://info.flagcounter.com/EBJh"><img src="https://s01.flagcounter.com/count2/EBJh/bg_FFC4EF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
