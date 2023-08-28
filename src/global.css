@@ -38,3 +38,9 @@
     padding: 2rem 1.5rem;
     justify-content: center;
 }
+.color{
+  background: #c8e61e;
+}
+.color:hover{
+  background: #b3cf17;
+}

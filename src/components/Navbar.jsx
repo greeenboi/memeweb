@@ -8,6 +8,7 @@ import { storage } from '../utils/firebase'
 import { ref, getDownloadURL, uploadBytes } from "firebase/storage"
 import { useState } from 'react';
 import { uploadBytesResumable } from 'firebase/storage';
+import { AiOutlineUpload } from 'react-icons/ai';
 import {
   Drawer,
   DrawerBody,
@@ -106,25 +107,31 @@ const Navbar = () => {
         <Drawer
         isOpen={isOpen}
         placement='right'
+        
         onClose={onClose}
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
         <DrawerContent className='noover'>
           <DrawerCloseButton />
-          <DrawerHeader>Upload Your Meme</DrawerHeader>
-          <form className='noover' name='upload_file' onSubmit={handleSubmit}>
-
+          <DrawerHeader borderBottomWidth='1px'>Upload Your Meme</DrawerHeader>
           <DrawerBody className='noover'>
-            <input type='file' />
-            <progress value={progressPercent} max="100"/>
-          </DrawerBody>
-
-          <DrawerFooter className='noover'>
+          <form className='flex flex-col gap-12 ' name='upload_file' onSubmit={handleSubmit}>
+            <label for="file-upload" class="cursor-pointer flex flex-row justify-center items-center gap-12 color text-gray-700 py-2 px-4 rounded-lg">
+              Upload Meme <AiOutlineUpload />
+            </label>
+            <input id="file-upload" type="file" class="hidden" />
             
-            <button colorScheme='blue'>Upload</button>
-          </DrawerFooter>
+            {!progressPercent > 0  ? (
+                <progress value={progressPercent} max="100" class="w-full"/>
+              ) : null}
+
+            <DrawerFooter className='noover'>
+              
+              <button colorScheme='yellow' className='rounded-md color'>Upload</button>
+            </DrawerFooter>
           </form>
+          </DrawerBody>
         </DrawerContent>
       </Drawer>
       

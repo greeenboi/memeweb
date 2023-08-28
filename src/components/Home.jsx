@@ -8,18 +8,21 @@ import { PiNumberOneBold, PiNumberTwoBold, PiNumberThreeBold } from 'react-icons
 const Home = () => {
   return (
    <>
-    <main className="hidden md:block homebanner">
-      <section className='flex flex-row gap-4 mt-2 mb-2'>
-        <Box  className='border p-24 rounded-3xl border-emerald-400 glass'>
-          <h1 className="text-8xl font-prism font-medium text-teal-200  ">
+    <main className="sm:hidden md:block homebanner">
+      <section className='hidden md:flex flex-row gap-4 mt-2 mb-2'>
+        <Box  className='border p-6 md:p-12 lg:p-24 rounded-3xl border-emerald-400 glass'>
+          <h1 className="text-6xl lg:text-8xl font-prism font-medium text-teal-200  ">
             <p  className="upgrade">
               Radical
             </p> Meme Gallery
           </h1>
         </Box>
-        
       </section>
-      
+      <h1 className="md:hidden text-6xl font-prism font-medium text-teal-200  ">
+        <p  className="upgrade">
+          Radical
+        </p> Meme Gallery
+      </h1>
     </main>
     <main className='flex flex-col justify-center items-center mt-12'>
     <Box className='p-12 w-full md:w-1/2 h-auto font-inter rounded-md flex items-center justify-center border border-emerald-400  '>
